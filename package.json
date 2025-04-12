@@ -1,0 +1,29 @@
+{
+  "name": "twothreebird-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "A vanilla JavaScript Tic Tac Toe game with tests",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "javascript",
+    "playwright",
+    "vitest"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "jsdom": "^22.1.0",
+    "vite": "^5.4.18",
+    "vitest": "^0.34.6"
+  }
+}
