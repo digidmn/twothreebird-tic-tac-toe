@@ -22,6 +22,9 @@ export class TicTacToe {
         // Winner (X, O, or null)
         this.winner = null;
 
+        // Winning cells (array of indices or null)
+        this.winningCells = null;
+
         return this;
     }
 
@@ -69,14 +72,20 @@ export class TicTacToe {
             [2, 4, 6]  // Diagonal top-right to bottom-left
         ];
 
-        return winPatterns.some(pattern => {
+        for (const pattern of winPatterns) {
             const [a, b, c] = pattern;
-            return (
+            if (
                 this.board[a] !== null &&
                 this.board[a] === this.board[b] &&
                 this.board[a] === this.board[c]
-            );
-        });
+            ) {
+                // Store the winning cells
+                this.winningCells = pattern;
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**
@@ -109,6 +118,14 @@ export class TicTacToe {
      */
     getWinner() {
         return this.winner;
+    }
+
+    /**
+     * Get the winning cells (array of indices or null if no winner)
+     * @returns {Array|null} - array of winning cell indices or null
+     */
+    getWinningCells() {
+        return this.winningCells ? [...this.winningCells] : null;
     }
 
     /**
