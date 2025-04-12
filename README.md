@@ -83,7 +83,7 @@ Run end-to-end tests with UI:
 npm run test:e2e:ui
 ```
 
-## Project Structure
+## Primary Project Structure
 
 ```
 twothreebird-tic-tac-toe/
@@ -92,6 +92,7 @@ twothreebird-tic-tac-toe/
 │   ├── js/                   # JavaScript files
 │   │   ├── game.js           # Game logic
 │   │   └── ui.js             # UI handling
+│   │   └── particles.js      # Particle background handling
 │   ├── css/                  # CSS styles
 │   └── index.html            # Main HTML file
 ├── tests/
