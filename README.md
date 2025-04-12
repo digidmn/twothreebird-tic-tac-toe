@@ -87,20 +87,22 @@ npm run test:e2e:ui
 
 ```
 twothreebird-tic-tac-toe/
-├── .github/workflows/  # GitHub Actions workflows
+├── .github/workflows/        # GitHub Actions workflows
 ├── src/
-│   ├── js/             # JavaScript files
-│   │   ├── game.js     # Game logic
-│   │   └── ui.js       # UI handling
-│   ├── css/            # CSS styles
-│   └── index.html      # Main HTML file
+│   ├── js/                   # JavaScript files
+│   │   ├── game.js           # Game logic
+│   │   └── ui.js             # UI handling
+│   ├── css/                  # CSS styles
+│   └── index.html            # Main HTML file
 ├── tests/
-│   ├── unit/           # Unit tests
-│   └── e2e/            # End-to-end tests
-├── .nvmrc              # Node version specification
-├── package.json        # Project configuration
-├── vite.config.js      # Vite configuration
-└── README.md           # Project documentation
+│   ├── unit/                 # Unit tests
+│   └── e2e/                  # End-to-end tests
+├── .nvmrc                    # Node version specification
+├── package.json              # Project configuration
+├── playwright.config.js      # Playwright configuration
+├── vite.config.js            # Vite configuration
+├── vitest.config.js          # Vitest configuration
+└── README.md                 # Project documentation
 ```
 
 ## CI/CD Pipeline
