@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+<div id="particles-js"></div>
 <div class="container">
     <h1>TwoThreeBird Assessment</h1>
-    <h3>Tic Tac Toe</h3>
+    <h2>Tic Tac Toe</h2>
+
+    <div class="instructions">
+        <h4>How to Play</h4>
+        <p>Take turns placing X and O on the board. Player X goes first.</p>
+        <p>Get three of your marks in a row (horizontally, vertically, or diagonally) to win!</p>
+        <p>Click "Reset Game" to start over at any time.</p>
+    </div>
 
     <div id="game-status" class="status">Player X's turn</div>
 
@@ -27,9 +35,14 @@
     </div>
 
     <button id="reset-button" class="reset-button">Reset Game</button>
+
+    <footer class="footer">
+        <p>Proudly made by Michael C Douman</p>
+    </footer>
 </div>
 
 <script type="module" src="./js/game.js"></script>
 <script type="module" src="./js/ui.js"></script>
+<script type="module" src="./js/particles.js"></script>
 </body>
 </html>
